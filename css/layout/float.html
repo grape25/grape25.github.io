@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    
+    <style>
+    
+        #container {
+            height: 500px;
+            width: 500px;
+            border: solid;
+        }
+    
+        #item1, #item2 {
+            width: 200px;
+            height: 200px;
+            border: solid;
+            opacity: 0.5;
+            
+        }
+        
+        #item1 {
+            background-color: blue;
+            float: left;
+        }
+        
+        #item2 {
+            background-color: lime;
+            float: right;
+        }
+        
+        p {
+            border: solid;
+/*            don't put any floating elements on left*/
+            clear: left;
+            clear: right;
+            clear: both;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+<div id="container">
+    <div id="item1">left</div>
+    <div id="item2">right</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, libero quibusdam provident nam possimus hic cupiditate, voluptatum consequuntur asperiores ex blanditiis facere quos, aliquid quidem error earum. Consequatur error, nulla.</p>
+</div>
+
+</body></html>

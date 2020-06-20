@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        div {
+            border: solid red;
+            height: 200px;
+            width: 200px;
+        }
+
+        p {
+            border: solid blue;
+            /*         width: 200px;*/
+            /*        height: 200px;*/
+            
+            display: inline-block;
+        }
+        
+        #incline{
+            display: inline;
+            font-size: 200px;
+            
+        }
+        
+        img{
+            display: none;
+        }
+        
+        #hide{
+            display: inline;
+            visibility: hidden;
+        }
+    </style>
+</head>
+ 
+<body>
+
+    <!-- block -->
+
+    <ul>
+        <li>width is cross the page</li>
+        <li>height is 0</li>
+        <li>can set set both width and height</li>
+        <li>cannot put other element beside block element</li>
+    </ul>
+
+    <div>Block</div>
+    <div>Block</div>
+
+    <!-- inline-block -->
+    
+    <ul>
+        <li>Width is 0</li>
+        <li>height is 0</li>
+        <li>can set width and height</li>
+        <li>they can be put together in a line</li>
+    </ul>
+    <p></p>
+    <p></p>
+    
+    <!--  incline  -->
+    
+    <ul>
+        <li>no width by default, but its width depends on its contents</li>
+        <li>height can not and can change, height depends on font size</li>
+        <li>they can be put in a line</li>
+        <li>can not set neither width or height</li>
+    </ul>
+    
+    <div id="incline">inline</div>
+    <p></p>
+    
+    <!--  image  -->
+    <br><br>
+    <img src="https://cdn.vox-cdn.com/thumbor/Al48-pEnyIn2rlgKX7MIHNmlE68=/0x0:5563x3709/1200x800/filters:focal(2302x1311:3192x2201)/cdn.vox-cdn.com/uploads/chorus_image/image/65752607/1048232144.jpg.0.jpg" alt="">
+    
+    <!--  visibility  -->
+    
+      <img id=hide src="https://cdn.vox-cdn.com/thumbor/Al48-pEnyIn2rlgKX7MIHNmlE68=/0x0:5563x3709/1200x800/filters:focal(2302x1311:3192x2201)/cdn.vox-cdn.com/uploads/chorus_image/image/65752607/1048232144.jpg.0.jpg" alt="">
+    
+
+    
+    
+
+</body></html>

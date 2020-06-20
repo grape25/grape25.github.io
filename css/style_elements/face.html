@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #face {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .eye {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: solid;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        #eye1 {
+            right: 45px;
+            top: 56px;
+
+        }
+
+        #eye2 {
+            left: 45px;
+            top: 56px;
+        }
+
+
+        .pupil {
+            border: solid;
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+
+        #mouth {
+            border: solid 20px;
+            position: absolute;
+            bottom: 100px;
+            width: 100px;
+            height: 100px;
+            left: 100px;
+            border-radius: 50%;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-top-color: transparent;
+
+
+        }
+
+        .corner {
+            width: 20px;
+            height: 40px;
+            background-color: black;
+            top: 80px;
+            border-radius: 10px;
+        }
+
+        #corner1 {
+            position: absolute;
+            transform: rotate(45deg)
+        }
+
+        #corner2 {
+            position: absolute;
+            left: 80px;
+            transform: rotate(-45deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div id="face">
+        <div class="eye" id="eye1">
+            <div class="pupil"></div>
+        </div>
+        <div class="eye" id="eye2">
+            <div class="pupil"></div>
+        </div>
+        <div id="mouth">
+            <div class="corner" id="corner1"></div>
+            <div class="corner" id="corner2"></div>
+        </div>
+
+    </div>
+
+</body></html>

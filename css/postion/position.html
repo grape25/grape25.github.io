@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>
+        body {
+            border: solid grey;
+        }
+
+        html {
+            margin: 100px;
+            border: solid lightgrey;
+        }
+
+        #container {
+            border: solid;
+            width: 600px;
+            height: 400px;
+            /*            overflow: auto; */
+            /*            position: relative;*/
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+        }
+
+        #item1 {
+            border: solid red;
+            position: relative;
+            right: 100px;
+        }
+
+        #item2 {
+            border: solid green;
+            position: absolute;
+            right: 100px;
+            /*            absolute means element relitive to its closest container which has non-static position.*/
+        }
+
+        #item3 {
+            border: solid blue;
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            bottom: 50px;
+            right: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="item" id="item1"></div>
+        <div class="item" id="item2"></div>
+        <div class="item" id="item3"></div>
+    </div>
+
+</body>
+
+</html>
