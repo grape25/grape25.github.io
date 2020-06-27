@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>responsive</title>
+    <style>
+        div {
+            background-color: blue;
+            height: 100px;
+            margin-bottom: 10px;
+
+        }
+
+        * {
+            margin: 0;
+        }
+
+        @media all and (min-width:992px) {
+
+            div {
+
+                background-color: red;
+                display: inline-block;
+                width: 45%;
+            }
+        }
+        
+        @media all and (min-width:1048px) {
+            
+            div {
+                
+                background-color: greenyellow;
+                width: 30%;
+            }
+        }
+        
+        @media print {
+            
+            div {
+                background-color: none;
+                border: solid;
+                
+            }
+            div:first-child {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+</body></html>
